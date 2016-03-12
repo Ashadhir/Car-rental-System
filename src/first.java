@@ -18,5 +18,7 @@ public class first {
         System.out.println("bhjb");
         System.out.println(",n,m");
         
+        System.out.println("DONE");
+        
     }
 }
