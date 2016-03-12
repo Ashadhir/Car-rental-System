@@ -11,15 +11,7 @@
 public class first {
     public static void main(String[] args) {
         System.out.println("hello guyz");
-        System.out.println("Rovinson");
-        System.out.println("Rovinssaon");
         System.out.println("vaanga seiyalaam");
-        System.out.println("Veliya pongada ayokiya raaskalgalaaaaa");
-        System.out.println("bhjb");
-        System.out.println(",n,m");
-        
-        System.out.println("DONE");
-        System.out.println("Last push vanthicha????????");
         
     }
 }
