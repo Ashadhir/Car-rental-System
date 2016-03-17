@@ -8,5 +8,6 @@ public class first {
         System.out.println("gfdytyg yg");
         System.out.println("hbjmbhvnvghnfh");
         System.out.println("sabd");
+        System.out.println("ns");
     }
 }
