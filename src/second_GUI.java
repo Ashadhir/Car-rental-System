@@ -51,9 +51,12 @@ public class second_GUI extends javax.swing.JFrame {
         mazda_panel = new javax.swing.JPanel();
         nissan_panel = new javax.swing.JPanel();
         toyota_panel = new javax.swing.JPanel();
+        Message = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         second_pannel.setBackground(new java.awt.Color(204, 0, 204));
         second_pannel.setLayout(null);
@@ -210,12 +213,25 @@ public class second_GUI extends javax.swing.JFrame {
         toyota_panel.setBackground(new java.awt.Color(51, 0, 51));
         toyota_panel.setLayout(null);
 
+        Message.setText("jLabel9");
+        Message.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                MessageKeyPressed(evt);
+            }
+        });
+        toyota_panel.add(Message);
+        Message.setBounds(50, 90, 60, 40);
+
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("TOYOTA PANEL");
         toyota_panel.add(jLabel3);
         jLabel3.setBounds(0, 0, 160, 40);
+
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        toyota_panel.add(jLabel10);
+        jLabel10.setBounds(110, 160, 90, 30);
 
         nissan_panel.add(toyota_panel);
         toyota_panel.setBounds(0, 0, 470, 310);
@@ -250,6 +266,13 @@ public class second_GUI extends javax.swing.JFrame {
 
         jPanel1.add(first_pannel);
         first_pannel.setBounds(120, 80, 470, 310);
+
+        jButton1.setBackground(new java.awt.Color(102, 102, 255));
+        jButton1.setFont(new java.awt.Font("Agency FB", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 153, 153));
+        jButton1.setText("Booking");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(480, 20, 65, 25);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 660, 440);
@@ -331,6 +354,11 @@ public class second_GUI extends javax.swing.JFrame {
         first_pannel.revalidate();
     }//GEN-LAST:event_jPanel1AncestorAdded
 
+    private void MessageKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MessageKeyPressed
+        // TODO add your handling code here:
+        Message.setText("Incorrect username or password");
+    }//GEN-LAST:event_MessageKeyPressed
+
     /**
      * @param args the command line arguments
      */
@@ -368,8 +396,11 @@ public class second_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Message;
     private javax.swing.JPanel first_pannel;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
